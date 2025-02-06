@@ -1,11 +1,21 @@
-import React, { Component } from 'react'
-
-class FBCPropEx1 extends Component {
-  render() {
-    return (
-      <div>FBCPropEx1</div>
+import React from 'react'
+const FBCPropex1 = (props) => {
+// console.log(props);
+ if(props.isLoggedIn == true){
+    return(
+       <div>
+         <h1>Welcome {props.username}</h1>
+        {
+            props.profiles.map(profile=>{
+                return <li>{profile}</li>
+            })
+        }
+       </div>
     )
-  }
+ }else{
+    return <h1>Please Login first!</h1>
+ }
 }
+export default FBCPropex1
 
-export default FBCPropEx1;
+

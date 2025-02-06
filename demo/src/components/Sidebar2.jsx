@@ -1,12 +1,13 @@
-import React from "react";
+import React, { Component } from 'react'
 
-function Sidebar2() {
-  return (
-    <div className="sidebar2">
-      <h1>Sidebar2</h1>
-    </div>
-  );
+ class Sidebar2 extends Component {
+  render() {
+    return (
+      <div className='side2'>
+        <h1>Sidebar2</h1>
+      </div>
+    )
+  }
 }
 
-
-export default Sidebar2;
+export default Sidebar2

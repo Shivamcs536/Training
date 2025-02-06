@@ -1,3 +1,0 @@
-rcc - to create react class component
-rfce - to crate reacy functional component
-rafce - to create react arrow function component

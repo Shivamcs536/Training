@@ -1,0 +1,133 @@
+Controlled Elements or Components:
+=============================
+MyForm.js
+==============
+import React, { Component } from 'react'
+import './formStyles.css'
+
+export class myForm extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       textValue: '',
+       skillValue: 'skill not selected'
+    }
+  }
+  
+  changeTextValue =(event) =>{
+    this.setState({
+        textValue: event.target.value
+    })
+  }
+
+  changeSkillValue =(event) =>{
+     this.setState({
+        skillValue: event.target.value
+     })
+     
+  }
+
+  submitted = (event) =>{
+   alert("Form is submitted "+ `${this.state.textValue} and ${this.state.skillValue}`)
+   event.preventDefault();   
+
+  }
+
+
+  render() {
+    return (
+      <div>
+        <form onSubmit={this.submitted}>
+          <label>CollegeName</label>
+          <input type='text' value={this.state.textValue} onChange={this.changeTextValue}>
+          </input>
+          <br></br>
+          <label>Skill</label> 
+          <select onChange={this.changeSkillValue}>
+          <option>React</option> 
+          <option>Angular</option>
+          <option>Springboot</option> 
+          </select> 
+          <button type='submit'>Submit</button>
+        
+        </form>
+        
+      </div>
+    )
+  }
+}
+
+export default myForm
+
+formStyles.css
+===================
+
+.heading1{
+    color:yellow;
+    background-color: blueviolet;
+}
+
+.heading2{
+    color:red;
+    background-color: black;
+}
+
+.font-style{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ App.js
+===========
+import logo from './logo.svg'
+import './App.css';
+import MyForm from './components/myForm';
+
+
+
+function App() {
+  return (
+    <div className="App">
+     <MyForm></MyForm>
+     </div>
+  );
+}
+
+export default App;
+
+
+React Virtual vs Real DOM
+Dom manipulation
+React vs JS
+Library vs Framework
+Use of Components
+Functional vs Class
+State
+Props
+UseState
+Applying styles to components
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+

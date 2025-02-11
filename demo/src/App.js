@@ -155,17 +155,72 @@
 
 // ! state examples
 
+// import React from 'react'
+// import CBCStateEx from './stateexamples/CBCStateEx'
+// import FBCStateEx from './stateexamples/FBCStateEx'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEx/> */}
+//       <FBCStateEx/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import logo from './logo.svg'
+// import './App.css';
+// import MyForm from './components/MyForm.jsx';
+
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//      <MyForm></MyForm>
+//      </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
 import React from 'react'
-import CBCStateEx from './stateexamples/CBCStateEx'
-import FBCStateEx from './stateexamples/FBCStateEx'
+import UseEffectEx from './hookexample/UseEffectEx'
 
 const App = () => {
   return (
-    <div>
-      {/* <CBCStateEx/> */}
-      <FBCStateEx/>
-    </div>
+    <UseEffectEx/>
   )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+

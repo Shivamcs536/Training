@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .parent{
+        display:grid;
+        height:100vh;
+        background-color: blue;
+        grid-template-columns:40% 30% 30%;
+        grid-template-rows:10% 40% 40% 10%;
+    }
+    .header{
+        background-color: blueviolet;
+        grid-column:1/4;
+        grid-row:1/2;
+
+    }
+    .sidebar{
+        background-color: aquamarine;
+        grid-column:1/4;
+        grid-row:1/2;
+
+
+    }
+    .c1{
+        grid-column:2/4;
+        grid-row:2/3;
+        background-color: rgb(45, 250, 22);
+
+    }
+    .c2{
+        grid-column:2/3;
+        grid-row:3/4;
+        background-color: rgb(195, 25, 214);
+
+    }
+    .c3{
+        grid-column:3/4;
+        grid-row:3/4;
+        background-color: rgb(239, 235, 15);
+
+    }
+    .footer{
+        grid-column:1/4;
+        grid-row:4/5;
+        background-color: red;
+
+    }
+</style>
+</head>
+<body>
+    <section class="parent">
+    <section class="header">Header </section>
+    <section class="sidebar">Side bar </section>
+    <section class="c1">content 1</section>
+    <section class="c2">content 2</section>
+    <section class="c3">content 3</section>
+    <section class="footer">footer</section>
+    
+</body>
+</html>
